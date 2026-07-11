@@ -12,6 +12,7 @@ async function bootstrap() {
     .setTitle('TicketFlow API')
     .setDescription('API da plataforma de ingressos para eventos')
     .setVersion('1.0')
+    .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document);

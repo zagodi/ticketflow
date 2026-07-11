@@ -30,8 +30,4 @@ export class CreateEventDto {
   @IsNumber()
   @Min(0)
   price!: number;
-
-  @IsString()
-  @IsNotEmpty()
-  organizerId!: string;
 }
